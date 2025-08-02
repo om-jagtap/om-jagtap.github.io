@@ -1,0 +1,12 @@
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Node / build tools (if used later)
+node_modules/
+dist/
+build/
+
+# Environment or config files
+*.env
+config*.json
