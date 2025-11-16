@@ -3,222 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Om Jagtap - Portfolio</title>
+  <title>Om Jagtap - DevOps & Linux Engineer</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0; background: #f5f6fa; color: #2d3436;
-      line-height: 1.6;
-    }
-
-    /* Header / Navbar */
-    header {
-      background: #2d3436;
-      color: white;
-      text-align: center;
-      padding: 60px 20px 40px;
-      position: relative;
-    }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: #f5f6fa; color: #2d3436; line-height: 1.6; }
+    header { background: #2d3436; color: white; text-align: center; padding: 60px 20px 40px; }
     header h1 { margin: 0; font-size: 2.5rem; }
     header p { margin: 10px 0; color: #dfe6e9; }
-
-    nav {
-      background: #0984e3;
-      display: flex; justify-content: center; gap: 20px;
-      padding: 12px;
-      position: sticky; top: 0; z-index: 100;
-    }
-    nav a {
-      color: white; text-decoration: none; font-weight: bold;
-      transition: 0.3s;
-    }
+    nav { background: #0984e3; display: flex; justify-content: center; gap: 20px; padding: 12px; position: sticky; top: 0; z-index: 100; }
+    nav a { color: white; text-decoration: none; font-weight: bold; transition: 0.3s; }
     nav a:hover { color: #ffeaa7; }
-
-    section {
-      max-width: 1000px; margin: auto; padding: 40px 20px;
-      animation: fadeIn 0.7s ease-in-out;
-    }
-    h2 {
-      color: #2d3436;
-      border-left: 4px solid #0984e3;
-      padding-left: 10px;
-      margin-bottom: 20px;
-      font-size: 1.8rem;
-    }
-
-    /* Skills */
-    .skills {
-      display: flex; flex-wrap: wrap; gap: 15px;
-    }
-    .skill {
-      background: #fff;
-      border-radius: 6px;
-      padding: 10px 15px;
-      display: flex; align-items: center;
-      gap: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-    }
-    .skill:hover { transform: scale(1.05); }
-
-    /* Certifications */
-    .certs {
-      display: flex; flex-wrap: wrap; gap: 15px;
-    }
-    .cert {
-      background: white;
-      padding: 10px 15px;
-      border-radius: 8px;
-      display: flex; align-items: center;
-      gap: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-    }
-    .cert img {
-      height: 35px; width: 35px; object-fit: contain;
-    }
-    .cert:hover { transform: scale(1.05); }
-
-    /* Projects */
-    .project {
-      background: white; padding: 15px;
-      margin: 15px 0; border-radius: 8px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
+    section { max-width: 1000px; margin: auto; padding: 40px 20px; animation: fadeIn 0.7s ease-in-out; }
+    h2 { color: #2d3436; border-left: 4px solid #0984e3; padding-left: 10px; margin-bottom: 20px; font-size: 1.8rem; }
+    .skills, .certs { display: flex; flex-wrap: wrap; gap: 15px; }
+    .skill, .cert { background: white; border-radius: 6px; padding: 10px 15px; display: flex; align-items: center; gap: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.2s; }
+    .skill:hover, .cert:hover { transform: scale(1.05); }
+    .project { background: white; padding: 15px; margin: 15px 0; border-radius: 8px; box-shadow: 0 3px 8px rgba(0,0,0,0.1); transition: transform 0.3s; }
     .project:hover { transform: translateY(-5px); }
-    .project a { color: #0984e3; text-decoration: none; font-weight: bold; }
-
-    /* Contact */
-    .contact p { margin: 10px 0; }
-
-    footer {
-      text-align: center; padding: 20px;
-      background: #2d3436; color: white;
-      margin-top: 30px;
-    }
-
-    /* Animations */
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-    a:hover {
-      color: #0984e3; /* Or any color you prefer for hover */
-      text-decoration: underline;
-    }
+    footer { text-align: center; padding: 20px; background: #2d3436; color: white; margin-top: 30px; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    a { color: inherit; text-decoration: none; }
+    a:hover { color: #0984e3; text-decoration: underline; }
   </style>
 </head>
 <body>
-  <!-- Header -->
- <!-- Header -->
 <header id="home">
   <h1>Om Jagtap</h1>
-  <p>Linux | AWS | Observability | Automation</p>
-
-  <!-- Contact at top -->
+  <p>DevOps & Linux Engineer | Cloud | Automation | DR</p>
   <div style="margin-top: 15px;">
     <p>Email: <a href="mailto:omjagtap.25@gmail.com" style="color: #dfe6e9;">omjagtap.25@gmail.com</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/om-jagtap" target="_blank" style="color: #dfe6e9;">linkedin.com/in/om-jagtap</a></p>
   </div>
 </header>
 
+<nav>
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#skills">Skills</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am a DevOps-focused Linux Engineer currently working at ESDS in the Disaster Recovery Management team. I work with eNlight Cloud, Ansible, Bash automation, and containers to streamline operations, validate DR readiness, and reduce manual work.</p>
+</section>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a Linux Associate with expertise in AWS, Linux administration, automation, and monitoring tools like Prometheus & Grafana. Passionate about building scalable and reliable infrastructure.</p>
-  </section>
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="project">
+    <h3>Linux Technical Associate - Disaster Recovery Management</h3>
+    <p><strong>ESDS Software Solution Ltd. | Oct 2024 – Present</strong></p>
+    <ul>
+      <li>Manage DR replication setups and perform regular mock drill testing for BFSI and government clients.</li>
+      <li>Automated configuration and patching across 44 Linux servers using Ansible and Bash scripting.</li>
+      <li>Troubleshoot network, OS, and storage issues while monitoring infrastructure through eNlight and Carbonite consoles.</li>
+    </ul>
+  </div>
+</section>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="skill"><i class="fa-brands fa-aws"></i> AWS</div>
-      <div class="skill"><i class="fa-brands fa-linux"></i> Linux</div>
-      <div class="skill"><i class="fa-solid fa-code"></i> Automation (Ansible/Bash/Python)</div>
-      <div class="skill"><i class="fa-solid fa-chart-line"></i> Prometheus & Grafana</div>
-      <div class="skill"><i class="fa-solid fa-docker"></i> Docker</div>
-    </div>
-  </section>
-
-  <!-- Certifications Section -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill"><i class="fa-brands fa-linux"></i> Linux Administration</div>
+    <div class="skill"><i class="fa-solid fa-terminal"></i> Bash / Shell Scripting</div>
+    <div class="skill"><i class="fa-solid fa-gear"></i> Ansible Automation</div>
+    <div class="skill"><i class="fa-solid fa-network-wired"></i> DR & Replication</div>
+    <div class="skill"><i class="fa-solid fa-cloud"></i> eNlight Cloud</div>
+    <div class="skill"><i class="fa-solid fa-docker"></i> Docker / Podman (Basics)</div>
+    <div class="skill"><i class="fa-brands fa-aws"></i> AWS (Foundations)</div>
+  </div>
+</section>
 
 <section id="certifications">
   <h2>Certifications</h2>
   <div class="certs">
     <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/ad30859c86ce4d4a8b3af773c38af6b2" target="_blank" class="cert">
       <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" alt="AWS">
-      <span>AWS Certified Solutions Architect</span>
+      <span>AWS Certified Solutions Architect – Associate</span>
     </a>
-
     <a href="https://rhtapps.redhat.com/verify?certId=240-103-572" target="_blank" class="cert">
       <img src="https://img.icons8.com/color/48/000000/red-hat.png" alt="RHCSA">
-      <span>Red Hat Certified System Administrator (RHCSA)</span>
+      <span>Red Hat Certified System Administrator</span>
     </a>
-
     <a href="https://rhtapps.redhat.com/verify?certId=240-103-572" target="_blank" class="cert">
       <img src="https://img.icons8.com/color/48/000000/red-hat.png" alt="RHCE">
-      <span>Red Hat Certified Engineer (RHCE)</span>
+      <span>Red Hat Certified Engineer</span>
     </a>
-
     <a href="https://rhtapps.redhat.com/verify?certId=240-103-572" target="_blank" class="cert">
       <img src="https://img.icons8.com/fluency/48/docker.png" alt="EX188">
-      <span>Red Hat Specialist in Containers & Kubernetes (EX188)</span>
+      <span>Red Hat Specialist in Containers & Kubernetes</span>
     </a>
   </div>
 </section>
 
-
-  <!-- Projects Section -->
 <section id="projects">
   <h2>Projects</h2>
   <div class="project">
-  <h3>Kind Demo App (Kubernetes NodePort Deployment)</h3>
-  <p>Containerized and deployed a Python Flask web application on a local Kubernetes cluster using <strong>Kind</strong>.</p>
-  <ul>
-    <li>Built Docker images and loaded them directly into a Kind cluster.</li>
-    <li>Configured Kubernetes Deployment and NodePort Service for external access.</li>
-    <li>Mapped host ports using Kind's <code>extraPortMappings</code> for local testing.</li>
-  </ul>
-  <a href="https://github.com/om-jagtap/kind-demo-app" target="_blank">View on GitHub</a>
-</div>
+    <h3>Kind Demo App (Kubernetes NodePort Deployment)</h3>
+    <p>Containerized and deployed a Python Flask app on a Kind cluster using Kubernetes Deployment and NodePort service.</p>
+    <a href="https://github.com/om-jagtap/kind-demo-app" target="_blank">View on GitHub</a>
+  </div>
 
-<div class="project">
+  <div class="project">
     <h3>Monitoring Stack (Prometheus + Grafana + Node Exporter)</h3>
-    <p>Built a complete monitoring solution for Linux servers and applications using open-source tools.</p>
+    <p>Deployed a monitoring pipeline for system metrics using Node Exporter, Prometheus, and Grafana.</p>
     <a href="https://github.com/om-jagtap/monitoring-stack" target="_blank">View on GitHub</a>
   </div>
-  
- 
-
-
-  
 </section>
 
- 
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Om Jagtap</p>
-  </footer>
+<footer>
+  <p>&copy; 2025 Om Jagtap</p>
+</footer>
 </body>
 </html>
